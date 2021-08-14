@@ -1,0 +1,28 @@
+// Mixins LOGO
+
+@mixin flex-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+@mixin p-style{
+    font-size: $pSize;
+    font-weight: bold;
+    font-family: $fontFamily;
+    letter-spacing: 1.2px;
+    line-height: 1.4;
+}
+
+@mixin h1-style{
+    font-size: $h1Size;
+    font-weight: bold;
+    font-family: $fontFamily;
+}
+
+@mixin mQ($arg){
+    @media screen and (max-width: $arg){
+        @content;
+    }
+}
