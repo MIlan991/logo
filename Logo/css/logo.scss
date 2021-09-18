@@ -60,11 +60,7 @@ header{
             text-align: center;
         }
     }
-    button{
-        background: none;
-        color: $whiteColor;
-        border: 1px solid $whiteColor;
-    }
+    
     }
     a{
         color: $grayColor;
@@ -74,6 +70,7 @@ header{
         transition: 0.3s;
         padding: 10px 30px;
         text-decoration: none;
+        text-align: center;
         @include mQ(480px){
             font-size: $pSizeMQ;
             border-top: 1px solid $whiteColor;
@@ -258,6 +255,7 @@ header{
         border-radius: 50px;
         border: 1.4px solid $whiteColor;
         text-decoration: none;
+        text-align: center;
         font-family: $fontFamily;
         font-weight: bold;
         font-size: $pSize;
@@ -355,16 +353,15 @@ footer{
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                margin-top: 18px;
             }
         }
         .logos li{
             color: $whiteColor;
-            border: 1px solid $whiteColor;
-            border-radius: 50%;
-            padding: 8px 10px;
             margin-left: 10px;
             @include mQ(480px){
                 border: none;
+                margin-bottom: 20px;
             }
         }
         .logos a{
@@ -372,8 +369,13 @@ footer{
             font-size: $pSize;
             font-family: $fontFamily;
             color: $whiteColor;
+            padding: 8px 10px;
+            border: 1px solid $whiteColor;
+            border-radius: 50%;
+            background-color: $darkGray;
             &:hover{
                 color: $grayColor;
+                border-color: $grayColor;
             }
             @include mQ(480px){
                 font-size: $pSizeMQ;
