@@ -233,12 +233,13 @@ header{
         height: 160px;
         border-radius: 50%;
         transition: 0.3s;
+        cursor: pointer;
         @include mQ(480px){
             width: 220px;
             height: 220px;
         }
         &:hover{
-            margin-top: -30px;
+            margin-top: -40px;
             @include mQ(568px){
                 opacity: 0.5;
                 transition: 0.2s;
@@ -324,6 +325,7 @@ footer{
                 flex-direction: column;
                 padding-bottom: 10px;
                 border-right: 1px solid $grayColor;
+                margin-top: 20px;
             }
         }
         .contact li{
